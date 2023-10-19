@@ -84,7 +84,7 @@ Detected lsbdistcodename is <${::lsbdistcodename}>.")
               $config_file   = '/etc/monitrc'
             }
             default: {
-              fail("monit supports EL 5, 6 and 7. Detected operatingsystemmajrelease is <${::operatingsystemmajrelease}>.")
+              fail("monit supports EL 5, 6, 7, 8, and 9. Detected operatingsystemmajrelease is <${::operatingsystemmajrelease}>.")
             }
           }
         }
