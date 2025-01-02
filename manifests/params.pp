@@ -64,6 +64,10 @@ Detected lsbdistcodename is <${::lsbdistcodename}>.")
               $monit_version = '5'
               $config_file   = '/etc/monitrc'
             }
+            '2023': {
+              $monit_version = '5'
+              $config_file   = '/etc/monitrc'
+            }
             default: {
               fail("monit supports Amazon Linux 2. Detected operatingsystemmajrelease is <${::operatingsystemmajrelease}>.")
             }
